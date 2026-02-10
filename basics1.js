@@ -1,5 +1,4 @@
 console.log("Hello World! \nAnukriti is back to coding!");
-
 let a=4;
 console.log(typeof (a));
 
