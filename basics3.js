@@ -51,5 +51,7 @@ let mappedArray = newFilterEvenScores.map(score=>score*3)
 console.log(mappedArray)
 let totalVal = mappedArray.reduce((sum, val)=>sum+val,0)
 console.log(totalVal)
-
 //chaining 
+var scores = [12,13,14,16]
+let chainedResult = scores.filter(score=>score%2 == 0).map(score=>score*3).reduce((sum, val)=>sum+val,0)
+console.log(chainedResult)
