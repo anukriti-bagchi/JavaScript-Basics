@@ -55,3 +55,16 @@ console.log(totalVal)
 var scores = [12,13,14,16]
 let chainedResult = scores.filter(score=>score%2 == 0).map(score=>score*3).reduce((sum, val)=>sum+val,0)
 console.log(chainedResult)
+
+//sorting an array
+var fruits = ["banana", "mango", "pomegranate", "apple"]
+fruits.sort()
+console.log(fruits.sort())
+console.log(fruits.reverse())
+
+//sorting an array of numbers
+var numbers = [40, 100, 1, 5, 25, 10]
+console.log(numbers.sort()) // it will sort in lexicographical order, not in numerical order
+// to sort in numerical order, we need to pass a compare function to the sort method, this is recursively 
+console.log(numbers.sort((a,b)=>a-b)) // for ascending order
+console.log(numbers.sort((a,b)=>b-a)) // for descending order
