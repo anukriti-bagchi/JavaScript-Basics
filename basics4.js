@@ -1,12 +1,24 @@
 //block of code- below we are showing 2 ways of declaring the function 
+//var - global level/functional
+//let - global level / block level{}
+//const - similar to let, difference is that it can not be reinitialised
+const greet = "Evening"
+// greet = "night"
+
+if(1 == 1)
+{
+    let greet = "Afternoon"
+}
 
 function add(a,b){
 
+    let greet ="Morning"// the scope does here as var is declared inside the function
     return a+b
 }
 
 let sum = add(2,8)
 console.log(sum)
+console.log(greet)
 
 function multiply(c,d)
 {
