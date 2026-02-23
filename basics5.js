@@ -14,5 +14,8 @@ console.log(part1, part2)
 
 let date = '23'
 let nextDate = '27'
-let diffDate = nextDate- date //this will throw an error, we cannot subtract strings
-// console.log(diffDate)
+let diffDate = nextDate- date //this will not throw an error, Because in JavaScript, subtracting two Date objects is allowed. Each Date is coerced to its numeric value (milliseconds since Jan 1, 1970), so nextDate - date returns the difference in milliseconds, not an error. If you log it, you’ll see a number.
+console.log(diffDate)
+//but there is a way to subtract two strings by converting them into number parseInt()
+let diff = parseInt(nextDate) - parseInt(date)
+diff.toString()
