@@ -1,5 +1,5 @@
 //strings
-let day = 'monday '
+let day = 'Tuesday '
 console.log(day.length) //7
 let subDay = day.slice(0,3)
 console.log(subDay)
@@ -19,3 +19,17 @@ console.log(diffDate)
 //but there is a way to subtract two strings by converting them into number parseInt()
 let diff = parseInt(nextDate) - parseInt(date)
 diff.toString()
+
+let newQuote = day + "is Funday"
+console.log(newQuote)
+let val = newQuote.indexOf("day", 5)
+console.log(val)
+//tuesday is funday
+let count =0
+let value = newQuote.indexOf("day")
+while(value!== -1)
+{
+    count++ //2
+    value = newQuote.indexOf("day, value+1")
+}
+console.log(count)
