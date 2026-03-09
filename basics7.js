@@ -20,9 +20,9 @@ module.exports = class Person
 }
 
 
-// let person = new Person("Tim", "Joseph")
-// let person1 = new Person("Chris", "Jones")
-// console.log(person.age)
-// console.log(person.location)
-// console.log(person.fullName())
-// console.log(person1.fullName())
+let person = new Person("Tim", "Joseph")
+let person1 = new Person("Chris", "Jones")
+console.log(person.age)
+console.log(person.location)
+console.log(person.fullName())
+console.log(person1.fullName())
